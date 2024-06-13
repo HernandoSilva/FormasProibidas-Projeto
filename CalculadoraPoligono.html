@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de área de Polígono Regular</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora para a área de um polígono regular." />
+    <meta name="keywords" content="polígono, área, geometria, matemática" />
+    <meta name="author" content="Hernando Silva">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/global.css">
+</head>
+
+<body>
+
+    <div class="homeBtn">
+        <a href="index.html">Home<span id="highlight">.</span></a>
+    </div>
+
+    <div class="container">
+
+        <div class="py-5 text-center">
+            <h2>Calculadora de área de Polígono Regular</h2>
+        </div>
+
+        <hr class="my-4">
+
+        <p class="lead">Um polígono regular é qualquer forma que possua seus lados e ângulos iguais. <br>A área de um
+            polígono regular com <strong>N lados</strong> pode ser calculada usando a seguinte
+            fórmula, onde <strong>s</strong> é o comprimento de um lado e <strong>a</strong> é a apótema (distância do
+            centro ao centro de um lado):
+            <code>A = (N * s * a) / 2</code>.
+        </p>
+
+        <form method="post" class="row g-3">
+            <div class="col-sm-6">
+                <label for="lados" class="form-label">Número de Lados (N):</label>
+                <input type="number" name="lados" id="lados" class="form-control" placeholder="Digite o número de lados"
+                    required>
+            </div>
+
+            <div class="col-sm-6">
+                <label for="comprimento" class="form-label">Comprimento do Lado (s):</label>
+                <input type="number" name="comprimento" id="comprimento" class="form-control"
+                    placeholder="Digite o comprimento do lado" required />
+            </div>
+
+            <div>
+                <label for="apotema" class="form-label">Apótema (a):</label>
+                <input type="number" name="apotema" id="apotema" class="form-control" placeholder="Digite a apótema"
+                    required />
+            </div>
+
+            <div>
+                <input type="submit" class="w-100 btn btn-primary btn-lg" id="btnCalc" value="Calcular" />
+            </div>
+
+        </form>
+
+        <div class="py-5 text-center">
+            <h3 id="resultado"></h3>
+        </div>
+    </div>
+
+    <script src="js/Poligono.js"></script>
+
+    <script>
+        document.getElementById("btnCalc").addEventListener("click", poligono);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container {
+    background-color: #d1d1d1;
+    border-radius: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #e83f43;
+    color: #e83f43;
+}
+#highlight {
+    color: #e83f43;
+  }
+
+.homeBtn {
+    display: flex;
+    position: relative;
+    width: 5rem;
+    padding: 3rem;
+}
+
+.homeBtn a {
+    color: #232323;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 0.6rem;
+    color: #232323;
+    border-radius: 0.5rem;
+}
